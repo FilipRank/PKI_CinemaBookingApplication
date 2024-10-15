@@ -9,6 +9,9 @@
   <mat-card-footer>Released in: {{ productions[0].publishedAt }}</mat-card-footer>
 </mat-card> -->
 
-<p> {{ foo }}</p>
+@if (bar.length > 0) {
+  <p> {{ bar[0].title }}</p>
+  <p> {{ foo.title }} </p>
+}
 
 <router-outlet />

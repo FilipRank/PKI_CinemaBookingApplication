@@ -10,10 +10,12 @@ export const appConfig: ApplicationConfig = {
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes),
     provideAnimationsAsync(),
-    provideHttpClient(withFetch())
+    provideHttpClient()
   ]
 };
 @Injectable()
 export class ConfigService {
   constructor(private http: HttpClient) {}
+
+  
 }

@@ -19,13 +19,17 @@ import { isAwaitKeyword } from 'typescript';
 })
 export class AppComponent implements OnInit {
   title = 'tempAngular';
-  foo: string = "";
+  foo: Production;
   bar: Production[] = [];
 
   constructor(private productionService: ProductionService, private ch: ChangeDetectorRef) { }
 
-  async ngOnInit() {
-    this.bar = await this.productionService.getAllProductions();
-    this.foo = (await this.productionService.getProductionById(0)).title;
+  ngOnInit() {
+    this.productionService.getAllProductions().subscribe(productions => {
+      this.bar = productions;
+    });
+    this.productionService.getProductionById(0).subscribe(production => {
+      this.foo = production;
+    });
   }
 }
