@@ -1,0 +1,24 @@
+.example-card {
+  max-width: 300px;
+}
+
+mat-card-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+mat-card-actions {
+  display: flex;
+  justify-content: end;
+}
+
+.container {
+  display: flex;
+  gap: 50px;
+}
+
+img {
+  height: 450px;
+}

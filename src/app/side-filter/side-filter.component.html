@@ -1,0 +1,87 @@
+<mat-accordion displayMode="flat" multi="true">
+  <mat-expansion-panel >
+    <mat-expansion-panel-header>
+      <mat-panel-title> Title </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-form-field>
+      <input matInput type="text" [(ngModel)]="title" (keyup)="onKeyUp()">
+    </mat-form-field>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title> Description </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-form-field>
+      <input matInput type="text">
+    </mat-form-field>
+  </mat-expansion-panel>
+
+  <!-- IMPLEMENT SELECTION FOR GENRES LATER -->
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title> Genre </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-form-field>
+      <input matInput [matAutocomplete]="auto">
+      <mat-autocomplete #auto>
+        <mat-option> Option1 </mat-option>
+        <mat-option> Option2 </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel >
+    <mat-expansion-panel-header>
+      <mat-panel-title> Duration </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-form-field>
+      <input matInput type="text">
+    </mat-form-field>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel >
+    <mat-expansion-panel-header>
+      <mat-panel-title> Crew </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-form-field>
+      <input matInput type="text">
+    </mat-form-field>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel >
+    <mat-expansion-panel-header>
+      <mat-panel-title> Date of release </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-form-field>
+      <input matInput type="text">
+    </mat-form-field>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel >
+    <mat-expansion-panel-header>
+      <mat-panel-title> Airing time </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-form-field>
+      <input matInput type="text">
+    </mat-form-field>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel >
+    <mat-expansion-panel-header>
+      <mat-panel-title> Airing time </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-form-field>
+      <input matInput type="text">
+    </mat-form-field>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel >
+    <mat-expansion-panel-header>
+      <mat-panel-title> Rating </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-form-field>
+      <input matInput type="text">
+    </mat-form-field>
+  </mat-expansion-panel>
+</mat-accordion>

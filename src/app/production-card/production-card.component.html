@@ -1,0 +1,21 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>{{ production.title }}</mat-card-title>
+    <mat-card-subtitle>{{ production.directors[0] }}</mat-card-subtitle>
+    <mat-chip-listbox>
+      @for (genre of production.genres; track $index) {
+        <mat-chip>{{ genre }}</mat-chip>
+      }
+    </mat-chip-listbox>
+  </mat-card-header>
+  <img mat-card-image [src]="production.poster" [alt]="production.title">
+  <mat-card-content>
+    <p>
+      {{ production.description }}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>MORE INFO</button>
+    <button mat-raised-button>BUY TICKET</button>
+  </mat-card-actions>
+</mat-card>

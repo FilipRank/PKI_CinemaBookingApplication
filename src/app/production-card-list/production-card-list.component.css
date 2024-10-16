@@ -1,0 +1,19 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 50px;
+  justify-items: center;
+  min-height: 1500px;
+}
+
+.header {
+  margin: 0.5rem 2rem;
+}
+
+mat-divider {
+  margin-bottom: 1rem;
+}
+
+.filter-button {
+  width: 100px;
+}

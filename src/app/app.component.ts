@@ -1,8 +1,13 @@
-import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { MaterialModule } from './material-module';
 import { ProductionService, Production } from './services/production.service';
-import { isAwaitKeyword } from 'typescript';
+import { ProductionCardComponent } from "./production-card/production-card.component";
+import { ProductionCardListComponent } from "./production-card-list/production-card-list.component";
+import { Review } from './services/review.service';
+import { concat, switchMap } from 'rxjs';
+import { SideFilterComponent } from "./side-filter/side-filter.component";
+import { ScrollingModule } from '@angular/cdk/scrolling';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +15,11 @@ import { isAwaitKeyword } from 'typescript';
   imports: [
     RouterOutlet,
     MaterialModule,
-  ],
+    ProductionCardComponent,
+    ProductionCardListComponent,
+    SideFilterComponent,
+    ScrollingModule
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   providers: [
@@ -19,17 +28,8 @@ import { isAwaitKeyword } from 'typescript';
 })
 export class AppComponent implements OnInit {
   title = 'tempAngular';
-  foo: Production;
-  bar: Production[] = [];
 
-  constructor(private productionService: ProductionService, private ch: ChangeDetectorRef) { }
+  constructor(private productionService: ProductionService) { }
 
-  ngOnInit() {
-    this.productionService.getAllProductions().subscribe(productions => {
-      this.bar = productions;
-    });
-    this.productionService.getProductionById(0).subscribe(production => {
-      this.foo = production;
-    });
-  }
+  ngOnInit() {}
 }

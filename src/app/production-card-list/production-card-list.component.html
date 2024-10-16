@@ -1,0 +1,13 @@
+<div class="header">
+  <button (click)="emitFilterButtonClick()" mat-flat-button #toggleFilterButton class="filter=button">
+    <mat-icon>filter_list</mat-icon> Filter
+  </button>
+</div>
+<mat-divider></mat-divider>
+<div class="grid">
+  @for (production of productions; track $index) {
+    <app-production-card [production]="production"></app-production-card>
+  }
+</div>
+<mat-paginator [pageIndex]="0" [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]">
+</mat-paginator>

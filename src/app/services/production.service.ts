@@ -2,13 +2,13 @@ import { Injectable } from "@angular/core";
 import { Review } from "./review.service";
 import { ConfigService } from "../app.config";
 import { HttpClient } from "@angular/common/http";
-import { Observable } from "rxjs";
+import { forkJoin, Observable } from "rxjs";
 
 export interface Production {
   id: number,
   title: string,
   description: string,
-  genre: "action" | "adventure" | "comedy" | "historical" | "drama" | "other",
+  genres: "action" | "adventure" | "comedy" | "historical" | "drama" | "epic" | "family" |"other",
   durationInHours: number,
   directors: Array<string>
   cast: Array<string>
@@ -32,18 +32,11 @@ export class ProductionService {
     return this.http.get<Production>(`http://localhost:3000/productions/${id}`);
   }
 
-  async getProductionReviews(production: Production): Promise<Review[]> {
-    let reviews: Review[] = []
+  getAllReviewsOfProduction(production: Production): Observable<Review[]> {
+    let reviewRequests = production.reviews.map((reviewUrl: string) => {
+      return this.http.get<Review>(reviewUrl)
+    });
 
-    if (production.reviews.length === 0) {
-      return reviews;
-    }
-    for (let reviewUrl of production.reviews) {
-      let response = await fetch(reviewUrl);
-      let review = await response.json();
-      reviews.push(review);
-    }
-    reviews.sort((a, b) => a.id - b.id);
-    return reviews;
+    return forkJoin(reviewRequests);
   }
 }
