@@ -1,5 +1,10 @@
 //@ts-nocheck
 
+import { Injectable } from "@angular/core";
+
+@Injectable({
+  providedIn: "root"
+})
 export class QueryBuilderService {
   private productionQueryParams = {
     title_like: null,

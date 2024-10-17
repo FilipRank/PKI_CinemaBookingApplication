@@ -3,6 +3,7 @@ import { Review } from "./review.service";
 import { ConfigService } from "../app.config";
 import { HttpClient } from "@angular/common/http";
 import { forkJoin, Observable } from "rxjs";
+import { QueryBuilderService } from "./queryBuilder.service";
 
 export interface Production {
   id: number,
@@ -22,7 +23,12 @@ export interface Production {
 @Injectable()
 export class ProductionService {
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private queryBuilderService: QueryBuilderService) {}
+
+  getProductionsWithParams(params: Object): Observable<Production[]> {
+    let paramsString = this.queryBuilderService.buildArguments(params);
+    return this.http.get<Production[]>(`http://localhost:3000/productions/${paramsString}`)
+  }
 
   getAllProductions(): Observable<Production[]> {
     return this.http.get<Production[]>("http://localhost:3000/productions");
