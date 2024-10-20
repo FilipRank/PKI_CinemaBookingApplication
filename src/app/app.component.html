@@ -1,4 +1,11 @@
-<mat-toolbar class="toolbar"></mat-toolbar>
+<mat-toolbar class="toolbar">
+  <button mat-icon-button>
+    <mat-icon>shopping_cart</mat-icon>
+  </button>
+  <button mat-icon-button>
+    <mat-icon>person</mat-icon>
+  </button>
+</mat-toolbar>
 <mat-drawer-container hasBackdrop="false" >
   <mat-drawer #filter [opened]="true" mode="side" autoFocus="false" class="drawer">
     <app-side-filter (filterUpdate)="list.onFilterUpdate($event)"></app-side-filter>
