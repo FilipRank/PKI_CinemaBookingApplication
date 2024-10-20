@@ -2,14 +2,14 @@ import { Component } from '@angular/core';
 import { MaterialModule } from '../material-module';
 
 @Component({
-  selector: 'app-register',
+  selector: 'app-login',
   standalone: true,
   imports: [
     MaterialModule
   ],
-  templateUrl: './register.component.html',
-  styleUrl: './register.component.css'
+  templateUrl: './login.component.html',
+  styleUrl: './login.component.css'
 })
-export class RegisterComponent {
+export class LoginComponent {
 
 }

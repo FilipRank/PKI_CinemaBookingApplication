@@ -3,6 +3,18 @@
     padding: 0;
 }
 
+.toolbar {
+  display: flex;
+  flex: 1 1 auto;
+  gap: 0.5rem;
+  background-color: rgb(249, 249, 249);
+  border-bottom: 1px solid #74777E;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
 /* .grid-container {
     display: grid;
     width: 100vw;

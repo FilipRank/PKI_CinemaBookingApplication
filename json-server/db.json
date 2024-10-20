@@ -271,7 +271,7 @@
             "email": "",
             "address": "",
             "password": "",
-            "favouriteGenres": [],
+            "favouriteGenre": "",
             "basket": [
                 {
                     "production": "",
