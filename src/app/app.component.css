@@ -3,21 +3,6 @@
     padding: 0;
 }
 
-
-.drawer {
-  border-radius: 0;
-  border-right: 1px solid #74777E;
-  /* padding: 1rem; */
-}
-
-.toolbar {
-  display: flex;
-  justify-content: end;
-  gap: 0.5rem;
-  background-color: rgb(249, 249, 249);
-  border-bottom: 1px solid #74777E;
-}
-
 /* .grid-container {
     display: grid;
     width: 100vw;

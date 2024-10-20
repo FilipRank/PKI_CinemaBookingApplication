@@ -8,6 +8,8 @@
 
 .header {
   margin: 0.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 mat-divider {
