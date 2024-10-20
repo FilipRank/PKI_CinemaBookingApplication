@@ -24,7 +24,7 @@ export class QueryBuilderService {
 
   buildArguments(params): string {
     const queryString = Object.keys(params)
-    .filter((key) => params[key] !== undefined && params[key] !== null && params[key] !== "")
+    .filter((key) => params[key] !== undefined && params[key] !== null && params[key] !== "" && !Number.isNaN(params[key]))
     .map(
       (key) => `${encodeURIComponent(key)}=${encodeURIComponent(params[key])}`
     )
