@@ -299,25 +299,6 @@
   ],
   "users": [
     {
-      "id": 0,
-      "name": "",
-      "surname": "",
-      "phoneNumber": "",
-      "email": "",
-      "address": "",
-      "password": "",
-      "favouriteGenres": [],
-      "basket": [
-        {
-          "production": "",
-          "airsAt": "1970-01-01T00:00:00Z",
-          "status": "",
-          "amount": 0
-        }
-      ],
-      "image": ""
-    },
-    {
       "id": "3467098958",
       "email": "dsfdfas",
       "password": "",

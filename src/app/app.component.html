@@ -14,8 +14,13 @@
     <mat-icon>person</mat-icon>
   </button>
   <mat-menu #profileMenu="matMenu">
-    <button mat-menu-item routerLink="/login">Log in</button>
-    <button mat-menu-item routerLink="/register">Register</button>
+    @if (hasActiveUser()) {
+      <button mat-menu-item (click)="onLogoutPress()"> Log out </button>
+    }
+    @else {
+      <button mat-menu-item routerLink="/login">Log in</button>
+      <button mat-menu-item routerLink="/register">Register</button>
+    }
   </mat-menu>
 </mat-toolbar>
 
