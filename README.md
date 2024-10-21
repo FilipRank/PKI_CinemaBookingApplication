@@ -10,7 +10,7 @@ Make sure you have a newer version of node/npm installed, along with the Angular
 
 1. Clone this repository: <br>
 ```git clone https://github.com/FilipRank/PKI_CinemaBookingApplication```
-2. Once inside the directory, install dependencies: <br>
+2. Once inside the directory, install the dependencies: <br>
 `npm install`
 3. Launch json-server: <br>
 `npx json-server json-server/db.json` <br>
