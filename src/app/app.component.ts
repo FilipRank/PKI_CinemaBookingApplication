@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 import { MaterialModule } from './material-module';
 import { ProductionService, Production } from './services/production.service';
 import { ProductionCardComponent } from "./production-card/production-card.component";
@@ -20,7 +20,8 @@ import { HomeComponent } from './home/home.component';
     ProductionCardListComponent,
     SideFilterComponent,
     ScrollingModule,
-    HomeComponent
+    HomeComponent,
+    RouterModule
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
