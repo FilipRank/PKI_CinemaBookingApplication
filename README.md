@@ -1,27 +1,20 @@
-# TempAngular
+# PKI Cinema Booking Application
+"PKI Cinema Booking Application" is my submission for a third year, fifth semester project for the subject "design and programming of user interfaces" at Singidunum University, Belgrade. 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.6.
+All students attending were tasked to build a front-end prototype for a cinema booking application. This project uses Angular 18 in combination with the node package [json-server](https://www.npmjs.com/package/json-server) to simulate a back-end in a pinch.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Setup & run
 
-## Code scaffolding
+Make sure you have a newer version of node/npm installed, along with the Angular CLI tool.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+1. Clone this repository: <br>
+```git clone https://github.com/FilipRank/PKI_CinemaBookingApplication```
+2. Once inside the directory, install dependencies: <br>
+`npm install`
+3. Launch json-server: <br>
+`npx json-server json-server/db.json` <br>
+Json server will start on port 3000, if not occupied.
+4. Serve the front-end with the angular CLI: <br>
+`ng serve`
+5. The front-end prototype application will be accessible at port 4200, if the port is free.
