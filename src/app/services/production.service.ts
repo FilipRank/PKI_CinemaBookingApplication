@@ -15,7 +15,7 @@ export interface Production {
   cast: Array<string>
   publishedAt: string
   airingTimes: Array<string>
-  ticketCurrency: { currency: "RSD" | "EUR" | "GBP" | "USD", amount: number }
+  ticketPrice: { currency: "RSD" | "EUR" | "GBP" | "USD", amount: number }
   reviews: Array<string>
   poster: string
 }

@@ -318,7 +318,20 @@
       "phoneNumber": "+3818374873",
       "favouriteGenres": "drama",
       "address": "Asadas",
-      "basket": []
+      "basket": [
+        {
+          "production": "http://localhost:3000/productions/1",
+          "airsAt": "2024-12-01T16: 00: 00Z",
+          "status": "rezervisano",
+          "amount": 1 
+        },
+        {
+          "production": "http://localhost:3000/productions/3",
+          "airsAt": "2024-11-01T18:00:00Z",
+          "status": "rezervisano",
+          "amount": 1
+        }
+      ]
     }
   ],
   "reviews": [
