@@ -1,17 +1,18 @@
 <mat-card appearance="outlined" class="card">
   <mat-card-header style="margin-bottom: 0.5rem;">
-    <mat-card-title>  Ticket to title </mat-card-title>
+    <mat-card-title>  Ticket to {{ production.title }} </mat-card-title>
     <button mat-icon-button>
       <mat-icon>cancel</mat-icon>
     </button>
   </mat-card-header>
   <mat-card-content class="register-form">
-    Price:  <br> Status: <br> Airs at:  
+    Price: {{ production.ticketPrice.amount + production.ticketPrice.currency }} 
+    <br> Status: {{ basketItem.status }} <br> Airs at: {{ basketItem.airsAt }}  
   </mat-card-content>
   <mat-card-actions style="display: flex; justify-content: end;">
     <mat-form-field>
       <mat-label for="Amount of tickets">Amount of tickets</mat-label>
-      <input matInput type="number" min="0">
+      <input matInput type="number" min="0" [(ngModel)]="basketItem.amount">
     </mat-form-field>
   </mat-card-actions>
 </mat-card>

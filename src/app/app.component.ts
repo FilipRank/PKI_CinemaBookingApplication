@@ -9,6 +9,7 @@ import { concat, switchMap } from 'rxjs';
 import { SideFilterComponent } from "./side-filter/side-filter.component";
 import { ScrollingModule } from '@angular/cdk/scrolling';
 import { HomeComponent } from './home/home.component';
+import { UserService } from './services/user.service';
 
 @Component({
   selector: 'app-root',
@@ -26,12 +27,20 @@ import { HomeComponent } from './home/home.component';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   providers: [
-    ProductionService
+    ProductionService,
+    UserService
   ]
 })
 export class AppComponent {
   title = 'tempAngular';
 
-  constructor() { }
+  constructor(private userService: UserService) { }
 
+  onLogoutPress() {
+    this.userService.logoutActiveUser();
+  }
+
+  hasActiveUser(): boolean {
+    return this.userService.hasActiveUser();
+  }
 }

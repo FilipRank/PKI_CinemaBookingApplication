@@ -7,35 +7,43 @@
     <mat-card-content class="register-form">
       <mat-form-field>
         <mat-label>Email</mat-label>
-        <input matInput type="email">
+        <input matInput type="email" [(ngModel)]="email">
       </mat-form-field>
       <mat-form-field>
         <mat-label>Password</mat-label>
-        <input matInput type="password">
+        <input matInput type="password" [(ngModel)]="password">
       </mat-form-field>
       <mat-form-field>
         <mat-label>Name</mat-label>
-        <input matInput type="text">
+        <input matInput type="text" [(ngModel)]="name">
       </mat-form-field>
       <mat-form-field>
         <mat-label>Surname</mat-label>
-        <input matInput type="text">
+        <input matInput type="text" [(ngModel)]="surname">
       </mat-form-field>
       <mat-form-field>
         <mat-label>Phone number</mat-label>
-        <input matInput type="text">
+        <input matInput type="text" [(ngModel)]="phoneNumber">
       </mat-form-field>
       <mat-form-field>
         <mat-label>Address</mat-label>
-        <input matInput type="text">
+        <input matInput type="text" [(ngModel)]="address">
       </mat-form-field>
       <mat-form-field>
-        <mat-label>Favourite Genre</mat-label>
-        <input matInput type="text">
+      <mat-label>Favorite food</mat-label>
+        <mat-select [(ngModel)]="favouriteGenre">
+          <mat-option value="action">action</mat-option>
+          <mat-option value="adventure">adventure</mat-option>
+          <mat-option value="comedy">comedy</mat-option>
+          <mat-option value="historical">historical</mat-option>
+          <mat-option value="drama">drama</mat-option>
+          <mat-option value="epic">epic</mat-option>
+          <mat-option value="family">family</mat-option>
+        </mat-select>
       </mat-form-field>
     </mat-card-content>
     <mat-card-actions style="display: flex; justify-content: end;">
-      <button mat-button>Register</button>
+      <button mat-button (click)="onRegisterPress()">Register</button>
     </mat-card-actions>
   </mat-card>
   <span></span>
