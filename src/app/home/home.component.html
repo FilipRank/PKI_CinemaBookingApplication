@@ -1,0 +1,6 @@
+<mat-drawer-container hasBackdrop="false" >
+  <mat-drawer #filter [opened]="true" mode="side" autoFocus="false" class="drawer">
+    <app-side-filter (filterUpdate)="list.onFilterUpdate($event)"></app-side-filter>
+  </mat-drawer>
+  <app-production-card-list #list (filterButtonClick)="filter.toggle()"></app-production-card-list>
+</mat-drawer-container>

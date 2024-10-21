@@ -3,15 +3,16 @@
     padding: 0;
 }
 
-
-.drawer {
-  border-radius: 0;
-  border-right: 1px solid #74777E;
-  /* padding: 1rem; */
+.toolbar {
+  display: flex;
+  flex: 1 1 auto;
+  gap: 0.5rem;
+  background-color: rgb(249, 249, 249);
+  border-bottom: 1px solid #74777E;
 }
 
-.toolbar {
-  background-color: rgb(201, 201, 201);
+.spacer {
+  flex-grow: 1;
 }
 
 /* .grid-container {

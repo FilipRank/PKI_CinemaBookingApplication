@@ -9,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
   standalone: true,
   imports: [
     MaterialModule,
-    FormsModule
+    FormsModule,
   ],
   templateUrl: './side-filter.component.html',
   styleUrl: './side-filter.component.css'
@@ -21,7 +21,16 @@ export class SideFilterComponent {
   description: string = "";
   director: string = "";
   cast: string = "";
-
+  durationHoursMinimum: number;
+  durationMinutesMinimum: number;
+  durationHoursMaximum: number;
+  durationMinutesMaximum: number;
+  publishedAtStart: Date;
+  publishedAtEnd: Date;
+  minPrice: number;
+  maxPrice: number;
+  airingTimeStart: Date;
+  airingTimeEnd: Date;
   constructor(private productionService: ProductionService) {}
 
   onKeyUp() {
@@ -30,7 +39,21 @@ export class SideFilterComponent {
         "title_like": this.title,
         "description_like": this.description,
         "directors_like": this.director,
-        "cast_like": this.cast
+        "cast_like": this.cast,
+        "durationInHours_gte":
+        (this.durationHoursMinimum + (this.durationMinutesMinimum/60 || 0)) || "",
+        "durationInHours_lte":
+        (this.durationHoursMaximum + (this.durationMinutesMaximum/60 || 0)) || "", 
+        "publishedAt_gte":
+        this.publishedAtStart ? this.publishedAtStart.toISOString() : "",
+        "publishedAt_lte":
+        this.publishedAtStart ? this.publishedAtEnd.toISOString() : "",
+        "ticketPrice.amount_gte": this.minPrice,
+        "ticketPrice.amount_lte": this.maxPrice,
+        "airingTimes_gte":
+        this.publishedAtStart ? this.airingTimeStart.toISOString() : "",
+        "airingTimes_lte":
+        this.publishedAtStart ? this.airingTimeEnd.toISOString() : ""
       }
     )
     .subscribe((productions: Production[]) => {

@@ -25,9 +25,13 @@ export class ProductionService {
 
   constructor(private http: HttpClient, private queryBuilderService: QueryBuilderService) {}
 
+  fullTextSearch(string: String): Observable<Production[]> {
+    return this.http.get<Production[]>(`http://localhost:3000/productions/?q=${string}`);
+  }
+
   getProductionsWithParams(params: Object): Observable<Production[]> {
     let paramsString = this.queryBuilderService.buildArguments(params);
-    return this.http.get<Production[]>(`http://localhost:3000/productions/${paramsString}`)
+    return this.http.get<Production[]>(`http://localhost:3000/productions/${paramsString}`);
   }
 
   getAllProductions(): Observable<Production[]> {

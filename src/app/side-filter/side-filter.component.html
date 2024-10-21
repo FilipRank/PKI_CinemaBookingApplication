@@ -35,9 +35,28 @@
     <mat-expansion-panel-header>
       <mat-panel-title> Duration </mat-panel-title>
     </mat-expansion-panel-header>
-    <mat-form-field>
-      <input matInput type="text">
-    </mat-form-field>
+    <label> Minimum duration </label>
+    <div class="adjacent-panel-body">
+      <mat-form-field>
+        <mat-label> Hours </mat-label>
+        <input [(ngModel)]="durationHoursMinimum" matInput type="number" min="0" (keyup)="onKeyUp()">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label> Minutes </mat-label>
+        <input [(ngModel)]="durationMinutesMinimum" matInput type="number" min="0" max="60" (keyup)="onKeyUp()">  
+      </mat-form-field>
+    </div>
+    <label> Maximum duration </label>
+    <div class="adjacent-panel-body">
+      <mat-form-field>
+        <mat-label> Hours </mat-label>
+        <input [(ngModel)]="durationHoursMaximum" matInput type="number" min="0" (keyup)="onKeyUp()">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label> Minutes </mat-label>
+        <input [(ngModel)]="durationMinutesMaximum" matInput type="number" min="0" max="60" (keyup)="onKeyUp()">
+      </mat-form-field>
+    </div>
   </mat-expansion-panel>
 
   <mat-expansion-panel >
@@ -62,8 +81,14 @@
     <mat-expansion-panel-header>
       <mat-panel-title> Date of release </mat-panel-title>
     </mat-expansion-panel-header>
-    <mat-form-field>
-      <input matInput type="text">
+    <mat-form-field class="date-input">
+      <mat-label>Enter a date range</mat-label>
+      <mat-date-range-input [rangePicker]="picker">
+        <input [(ngModel)]="publishedAtStart" matStartDate placeholder="Start date" (dateChange)="onKeyUp()">
+        <input [(ngModel)]="publishedAtEnd" matEndDate placeholder="End date" (dateChange)="onKeyUp()">
+      </mat-date-range-input>
+      <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-date-range-picker #picker></mat-date-range-picker>
     </mat-form-field>
   </mat-expansion-panel>
 
@@ -71,17 +96,36 @@
     <mat-expansion-panel-header>
       <mat-panel-title> Price </mat-panel-title>
     </mat-expansion-panel-header>
-    <mat-form-field>
-      <input matInput type="text">
-    </mat-form-field>
+    <div class="adjacent-panel-body" style="flex-direction: column;">
+      <mat-form-field>
+        <mat-label> Minimum </mat-label>
+        <input [(ngModel)]="minPrice" matInput type="number" (ngModelChange)="onKeyUp()">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label> Maximum </mat-label>
+        <input [(ngModel)]="maxPrice" matInput type="number" (ngModelChange)="onKeyUp()">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label> Currency </mat-label>
+        <mat-select>
+          <mat-option value="RSD"> RSD </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
   </mat-expansion-panel>
 
   <mat-expansion-panel >
     <mat-expansion-panel-header>
-      <mat-panel-title> Airing time </mat-panel-title>
+      <mat-panel-title> Airing date </mat-panel-title>
     </mat-expansion-panel-header>
-    <mat-form-field>
-      <input matInput type="text">
+    <mat-form-field class="date-input">
+      <mat-label>Enter a date range</mat-label>
+      <mat-date-range-input [rangePicker]="picker2">
+        <input [(ngModel)]="airingTimeStart" matStartDate placeholder="Start date" (dateChange)="onKeyUp()">
+        <input [(ngModel)]="airingTimeEnd" matEndDate placeholder="End date" (dateChange)="onKeyUp()">
+      </mat-date-range-input>
+      <mat-datepicker-toggle matIconSuffix [for]="picker2"></mat-datepicker-toggle>
+      <mat-date-range-picker #picker2></mat-date-range-picker>
     </mat-form-field>
   </mat-expansion-panel>
 

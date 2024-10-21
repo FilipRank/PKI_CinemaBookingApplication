@@ -2,6 +2,13 @@
   <button (click)="emitFilterButtonClick()" mat-flat-button #toggleFilterButton class="filter=button">
     <mat-icon>filter_list</mat-icon> Filter
   </button>
+  <mat-form-field appearance="outline" >
+    <mat-label>Quick search</mat-label>
+    <input matInput placeholder="Placeholder" [(ngModel)]="quickSearchString" (keyup)="onQuickSearchUpdate()">
+    <mat-hint>Search by all text contents</mat-hint>
+    <mat-icon matSuffix>search</mat-icon>
+  </mat-form-field>
+  <span></span>
 </div>
 <mat-divider></mat-divider>
 <div class="grid">

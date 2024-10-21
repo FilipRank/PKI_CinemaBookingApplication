@@ -8,13 +8,15 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MaterialModule } from '../material-module';
 import { filter } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-production-card-list',
   standalone: true,
   imports: [
     ProductionCardComponent,
-    MaterialModule
+    MaterialModule,
+    FormsModule
   ],
   templateUrl: './production-card-list.component.html',
   styleUrl: './production-card-list.component.css'
@@ -22,6 +24,7 @@ import { HttpClient } from '@angular/common/http';
 export class ProductionCardListComponent implements OnInit {
   productions: Production[] = [];
   @Output() filterButtonClick = new EventEmitter<string>();
+  quickSearchString: string = "";
 
   constructor(private productionService: ProductionService) {}
 
@@ -33,9 +36,15 @@ export class ProductionCardListComponent implements OnInit {
     this.productions = productions;
   }
 
+  onQuickSearchUpdate() {
+    this.productionService.fullTextSearch(this.quickSearchString).subscribe((productions) => {
+      this.productions = productions
+    });
+  }
+
   ngOnInit() {
-    this.productionService.getAllProductions().subscribe(production => {
-      this.productions = production;
+    this.productionService.getAllProductions().subscribe(productions => {
+      this.productions = productions;
     });
   }
 }

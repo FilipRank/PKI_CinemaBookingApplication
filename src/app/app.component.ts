@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 import { MaterialModule } from './material-module';
 import { ProductionService, Production } from './services/production.service';
 import { ProductionCardComponent } from "./production-card/production-card.component";
@@ -8,6 +8,7 @@ import { Review } from './services/review.service';
 import { concat, switchMap } from 'rxjs';
 import { SideFilterComponent } from "./side-filter/side-filter.component";
 import { ScrollingModule } from '@angular/cdk/scrolling';
+import { HomeComponent } from './home/home.component';
 
 @Component({
   selector: 'app-root',
@@ -18,7 +19,9 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
     ProductionCardComponent,
     ProductionCardListComponent,
     SideFilterComponent,
-    ScrollingModule
+    ScrollingModule,
+    HomeComponent,
+    RouterModule
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
@@ -26,10 +29,9 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
     ProductionService
   ]
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   title = 'tempAngular';
 
-  constructor(private productionService: ProductionService) { }
+  constructor() { }
 
-  ngOnInit() {}
 }
