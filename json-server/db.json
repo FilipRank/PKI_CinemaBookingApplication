@@ -1,304 +1,361 @@
 {
-    "productions": [
+  "productions": [
+    {
+      "id": 0,
+      "title": "The Jesus Film",
+      "description": "Filmed on location in Israel at authentic biblical sites, this inspirational drama and commercial success retells the life of Christ.",
+      "genres": [
+        "drama",
+        "historical"
+      ],
+      "durationInHours": 1.95,
+      "directors": [
+        "John Krish"
+      ],
+      "cast": [],
+      "publishedAt": "1980-11-01",
+      "airingTimes": [
+        "2024-11-01T16:00:00Z"
+      ],
+      "ticketPrice": {
+        "currency": "RSD",
+        "amount": 500
+      },
+      "reviews": [
+        "http://localhost:3000/reviews/0",
+        "http://localhost:3000/reviews/1"
+      ],
+      "poster": "http://localhost:3000/assets/images/posters/thejesusfilm.png"
+    },
+    {
+      "id": 1,
+      "title": "War Room",
+      "description": "A seemingly perfect family looks to fix their problems with the help of Miss Clara, an older, wiser woman.",
+      "genres": [
+        "drama"
+      ],
+      "durationInHours": 2,
+      "directors": [
+        "Alex Kendrick"
+      ],
+      "cast": [
+        "Priscilla C. Shirer",
+        "T.C Stallings",
+        "Karen Abercrombie"
+      ],
+      "publishedAt": "2015-00-01",
+      "airingTimes": [
+        "2024-12-01T16:00:00Z"
+      ],
+      "ticketPrice": {
+        "currency": "RSD",
+        "amount": 500
+      },
+      "reviews": [],
+      "poster": "http://localhost:3000/assets/images/posters/warroom.png"
+    },
+    {
+      "id": 2,
+      "title": "The Gospel Of John",
+      "description": "The story of Jesus' life as told by the apostle John, narrated by Christopher Plummer.",
+      "genres": [
+        "drama",
+        "historical"
+      ],
+      "durationInHours": 3,
+      "directors": [
+        "Philip Saville"
+      ],
+      "cast": [
+        "Henry Ian Cusick",
+        "Daniel Kash",
+        "Christopher Plummer"
+      ],
+      "publishedAt": "2003-11-01",
+      "airingTimes": [
+        "2025-01-01T16:00:00Z"
+      ],
+      "ticketPrice": {
+        "currency": "RSD",
+        "amount": 500
+      },
+      "reviews": [],
+      "poster": "http://localhost:3000/assets/images/posters/thegospelofjohn.png"
+    },
+    {
+      "id": 3,
+      "title": "The Passion of the Christ",
+      "description": "Depicts the final twelve hours in the life of Jesus of Nazareth, on the day of his crucifixion in Jerusalem.",
+      "genres": [
+        "drama",
+        "historical",
+        "epic"
+      ],
+      "durationInHours": 2.117,
+      "directors": [
+        "Mel Gibson"
+      ],
+      "cast": [
+        "Jim Caviezel",
+        "Monica Bellucci",
+        "Maia Morgenstern"
+      ],
+      "publishedAt": "2004-11-01",
+      "airingTimes": [
+        "2024-11-01T18:00:00Z"
+      ],
+      "ticketPrice": {
+        "currency": "RSD",
+        "amount": 500
+      },
+      "reviews": [],
+      "poster": "http://localhost:3000/assets/images/posters/thepassionofthechrist.png"
+    },
+    {
+      "id": 4,
+      "title": "God's Not Dead: We the People",
+      "description": "Reverend Dave is called to defend a group of Christian homeschooling families in a pivotal congressional hearing that could change the freedom to educate children at home.",
+      "genres": [
+        "drama",
+        "family"
+      ],
+      "durationInHours": 1.5,
+      "directors": [
+        "Vance Null"
+      ],
+      "cast": [
+        "David A.R. White",
+        "William Forsythe",
+        "Isaiah Washington",
+        "Antonio Sabato Jr."
+      ],
+      "publishedAt": "2021-10-04",
+      "airingTimes": [
+        "2024-11-01T18:00:00Z",
+        "2024-11-02T20:00:00Z"
+      ],
+      "ticketPrice": {
+        "currency": "RSD",
+        "amount": 600
+      },
+      "reviews": [],
+      "poster": "http://localhost:3000/assets/images/posters/godsnotdead4.png"
+    },
+    {
+      "id": 5,
+      "title": "Risen",
+      "description": "In 33 AD, a Roman Tribune in Judea is tasked to find the missing body of Jesus Christ, which disappeared after his crucifixion, in order to disprove the rumors of a risen Messiah.",
+      "genres": [
+        "historical",
+        "drama",
+        "action"
+      ],
+      "durationInHours": 1.75,
+      "directors": [
+        "Kevin Reynolds"
+      ],
+      "cast": [
+        "Joseph Fiennes",
+        "Tom Felton",
+        "Peter Firth",
+        "Cliff Curtis"
+      ],
+      "publishedAt": "2016-02-19",
+      "airingTimes": [
+        "2024-11-05T19:00:00Z",
+        "2024-11-06T21:00:00Z"
+      ],
+      "ticketPrice": {
+        "currency": "RSD",
+        "amount": 700
+      },
+      "reviews": [],
+      "poster": "http://localhost:3000/assets/images/posters/risen.png"
+    },
+    {
+      "id": 6,
+      "title": "God's Not Dead",
+      "description": "A college student must prove to his professor that God exists in order to earn a passing grade in his philosophy class, sparking a series of discussions and events that influence many lives.",
+      "genres": [
+        "drama",
+        "family"
+      ],
+      "durationInHours": 1.53,
+      "directors": [
+        "Harold Cronk"
+      ],
+      "cast": [
+        "Shane Harper",
+        "Kevin Sorbo",
+        "David A.R. White",
+        "Dean Cain"
+      ],
+      "publishedAt": "2014-03-21",
+      "airingTimes": [
+        "2024-11-10T17:00:00Z",
+        "2024-11-11T19:00:00Z"
+      ],
+      "ticketPrice": {
+        "currency": "RSD",
+        "amount": 550
+      },
+      "reviews": [],
+      "poster": "http://localhost:3000/assets/images/posters/godsnotdead.png"
+    },
+    {
+      "id": 7,
+      "title": "The Prince of Egypt",
+      "description": "An animated epic telling the story of Moses, an adopted Egyptian prince who discovers his Hebrew heritage and is inspired to free his people from slavery.",
+      "genres": [
+        "drama",
+        "historical",
+        "epic"
+      ],
+      "durationInHours": 1.39,
+      "directors": [
+        "Brenda Chapman",
+        "Steve Hickner",
+        "Simon Wells"
+      ],
+      "cast": [
+        "Val Kilmer",
+        "Ralph Fiennes",
+        "Michelle Pfeiffer",
+        "Sandra Bullock"
+      ],
+      "publishedAt": "1998-12-18",
+      "airingTimes": [
+        "2024-11-15T18:00:00Z",
+        "2024-11-16T20:00:00Z"
+      ],
+      "ticketPrice": {
+        "currency": "RSD",
+        "amount": 650
+      },
+      "reviews": [],
+      "poster": "http://localhost:3000/assets/images/posters/theprinceofegypt.png"
+    },
+    {
+      "id": 8,
+      "title": "Moses",
+      "description": "A television film starring Ben Kingsley as Moses, depicting his life and journey leading the Israelites out of Egypt and receiving the Ten Commandments.",
+      "genres": [
+        "drama",
+        "historical",
+        "epic"
+      ],
+      "durationInHours": 3.1,
+      "directors": [
+        "Roger Young"
+      ],
+      "cast": [
+        "Ben Kingsley",
+        "Frank Langella",
+        "Christopher Lee",
+        "Anna Galiena"
+      ],
+      "publishedAt": "1995-12-20",
+      "airingTimes": [
+        "2024-11-20T16:00:00Z",
+        "2024-11-21T19:00:00Z"
+      ],
+      "ticketPrice": {
+        "currency": "RSD",
+        "amount": 750
+      },
+      "reviews": [],
+      "poster": "http://localhost:3000/assets/images/posters/moses.png"
+    },
+    {
+      "id": 9,
+      "title": "Peter and Paul",
+      "description": "A miniseries that follows the lives of the Apostles Peter and Paul, chronicling their journey to spread the teachings of Jesus and the founding of the Christian church.",
+      "genres": [
+        "historical",
+        "drama"
+      ],
+      "durationInHours": 3.2,
+      "directors": [
+        "Robert Day"
+      ],
+      "cast": [
+        "Anthony Hopkins",
+        "Robert Foxworth",
+        "Eddie Albert",
+        "Raymond Burr"
+      ],
+      "publishedAt": "1981-04-12",
+      "airingTimes": [
+        "2024-11-25T17:00:00Z",
+        "2024-11-26T21:00:00Z"
+      ],
+      "ticketPrice": {
+        "currency": "RSD",
+        "amount": 800
+      },
+      "reviews": [],
+      "poster": "http://localhost:3000/assets/images/posters/peterandpaul.png"
+    }
+  ],
+  "users": [
+    {
+      "id": 0,
+      "name": "",
+      "surname": "",
+      "phoneNumber": "",
+      "email": "",
+      "address": "",
+      "password": "",
+      "favouriteGenres": [],
+      "basket": [
         {
-            "id": 0,
-            "title": "The Jesus Film",
-            "description": "Filmed on location in Israel at authentic biblical sites, this inspirational drama and commercial success retells the life of Christ.",
-            "genres": ["drama", "historical"],
-            "durationInHours": 1.95,
-            "directors": ["John Krish"],
-            "cast": [],
-            "publishedAt": "1980-11-01",
-            "airingTimes": [
-                "2024-11-01T16:00:00Z"
-            ],
-            "ticketPrice": {
-                "currency": "RSD",
-                "amount": 500
-            },
-            "reviews": ["http://localhost:3000/reviews/0", "http://localhost:3000/reviews/1"],
-            "poster": "http://localhost:3000/assets/images/posters/thejesusfilm.png"
-        },
-        {
-            "id": 1,
-            "title": "War Room",
-            "description": "A seemingly perfect family looks to fix their problems with the help of Miss Clara, an older, wiser woman.",
-            "genres": ["drama"],
-            "durationInHours": 2,
-            "directors": ["Alex Kendrick"],
-            "cast": ["Priscilla C. Shirer", "T.C Stallings", "Karen Abercrombie"],
-            "publishedAt": "2015-00-01",
-            "airingTimes": [
-                "2024-12-01T16:00:00Z"
-            ],
-            "ticketPrice": {
-                "currency": "RSD",
-                "amount": 500
-            },
-            "reviews": [],
-            "poster": "http://localhost:3000/assets/images/posters/warroom.png"
-        },
-        {
-            "id": 2,
-            "title": "The Gospel Of John",
-            "description": "The story of Jesus' life as told by the apostle John, narrated by Christopher Plummer.",
-            "genres": ["drama", "historical"],
-            "durationInHours": 3,
-            "directors": ["Philip Saville"],
-            "cast": ["Henry Ian Cusick", "Daniel Kash", "Christopher Plummer"],
-            "publishedAt": "2003-11-01",
-            "airingTimes": [
-                "2025-01-01T16:00:00Z"
-            ],
-            "ticketPrice": {
-                "currency": "RSD",
-                "amount": 500
-            },
-            "reviews": [],
-            "poster": "http://localhost:3000/assets/images/posters/thegospelofjohn.png"
-        },
-        {
-            "id": 3,
-            "title": "The Passion of the Christ",
-            "description": "Depicts the final twelve hours in the life of Jesus of Nazareth, on the day of his crucifixion in Jerusalem.",
-            "genres": ["drama", "historical", "epic"],
-            "durationInHours": 2.117,
-            "directors": ["Mel Gibson"],
-            "cast": ["Jim Caviezel", "Monica Bellucci", "Maia Morgenstern"],
-            "publishedAt": "2004-11-01",
-            "airingTimes": [
-                "2024-11-01T18:00:00Z"
-            ],
-            "ticketPrice": {
-                "currency": "RSD",
-                "amount": 500
-            },
-            "reviews": [],
-            "poster": "http://localhost:3000/assets/images/posters/thepassionofthechrist.png"
-        },
-        {
-          "id": 4,
-          "title": "God's Not Dead: We the People",
-          "description": "Reverend Dave is called to defend a group of Christian homeschooling families in a pivotal congressional hearing that could change the freedom to educate children at home.",
-          "genres": [
-            "drama",
-            "family"
-          ],
-          "durationInHours": 1.5,
-          "directors": [
-            "Vance Null"
-          ],
-          "cast": [
-            "David A.R. White",
-            "William Forsythe",
-            "Isaiah Washington",
-            "Antonio Sabato Jr."
-          ],
-          "publishedAt": "2021-10-04",
-          "airingTimes": [
-            "2024-11-01T18:00:00Z",
-            "2024-11-02T20:00:00Z"
-          ],
-          "ticketPrice": {
-            "currency": "RSD",
-            "amount": 600
-          },
-          "reviews": [],
-          "poster": "http://localhost:3000/assets/images/posters/godsnotdead4.png"
-        },
-        {
-          "id": 5,
-          "title": "Risen",
-          "description": "In 33 AD, a Roman Tribune in Judea is tasked to find the missing body of Jesus Christ, which disappeared after his crucifixion, in order to disprove the rumors of a risen Messiah.",
-          "genres": [
-            "historical",
-            "drama",
-            "action"
-          ],
-          "durationInHours": 1.75,
-          "directors": [
-            "Kevin Reynolds"
-          ],
-          "cast": [
-            "Joseph Fiennes",
-            "Tom Felton",
-            "Peter Firth",
-            "Cliff Curtis"
-          ],
-          "publishedAt": "2016-02-19",
-          "airingTimes": [
-            "2024-11-05T19:00:00Z",
-            "2024-11-06T21:00:00Z"
-          ],
-          "ticketPrice": {
-            "currency": "RSD",
-            "amount": 700
-          },
-          "reviews": [],
-          "poster": "http://localhost:3000/assets/images/posters/risen.png"
-        },
-        {
-          "id": 6,
-          "title": "God's Not Dead",
-          "description": "A college student must prove to his professor that God exists in order to earn a passing grade in his philosophy class, sparking a series of discussions and events that influence many lives.",
-          "genres": [
-            "drama",
-            "family"
-          ],
-          "durationInHours": 1.53,
-          "directors": [
-            "Harold Cronk"
-          ],
-          "cast": [
-            "Shane Harper",
-            "Kevin Sorbo",
-            "David A.R. White",
-            "Dean Cain"
-          ],
-          "publishedAt": "2014-03-21",
-          "airingTimes": [
-            "2024-11-10T17:00:00Z",
-            "2024-11-11T19:00:00Z"
-          ],
-          "ticketPrice": {
-            "currency": "RSD",
-            "amount": 550
-          },
-          "reviews": [],
-          "poster": "http://localhost:3000/assets/images/posters/godsnotdead.png"
-        },
-        {
-          "id": 7,
-          "title": "The Prince of Egypt",
-          "description": "An animated epic telling the story of Moses, an adopted Egyptian prince who discovers his Hebrew heritage and is inspired to free his people from slavery.",
-          "genres": [
-            "drama",
-            "historical",
-            "epic"
-          ],
-          "durationInHours": 1.39,
-          "directors": [
-            "Brenda Chapman",
-            "Steve Hickner",
-            "Simon Wells"
-          ],
-          "cast": [
-            "Val Kilmer",
-            "Ralph Fiennes",
-            "Michelle Pfeiffer",
-            "Sandra Bullock"
-          ],
-          "publishedAt": "1998-12-18",
-          "airingTimes": [
-            "2024-11-15T18:00:00Z",
-            "2024-11-16T20:00:00Z"
-          ],
-          "ticketPrice": {
-            "currency": "RSD",
-            "amount": 650
-          },
-          "reviews": [],
-          "poster": "http://localhost:3000/assets/images/posters/theprinceofegypt.png"
-        },
-        {
-          "id": 8,
-          "title": "Moses",
-          "description": "A television film starring Ben Kingsley as Moses, depicting his life and journey leading the Israelites out of Egypt and receiving the Ten Commandments.",
-          "genres": [
-            "drama",
-            "historical",
-            "epic"
-          ],
-          "durationInHours": 3.1,
-          "directors": [
-            "Roger Young"
-          ],
-          "cast": [
-            "Ben Kingsley",
-            "Frank Langella",
-            "Christopher Lee",
-            "Anna Galiena"
-          ],
-          "publishedAt": "1995-12-20",
-          "airingTimes": [
-            "2024-11-20T16:00:00Z",
-            "2024-11-21T19:00:00Z"
-          ],
-          "ticketPrice": {
-            "currency": "RSD",
-            "amount": 750
-          },
-          "reviews": [],
-          "poster": "http://localhost:3000/assets/images/posters/moses.png"
-        },
-        {
-          "id": 9,
-          "title": "Peter and Paul",
-          "description": "A miniseries that follows the lives of the Apostles Peter and Paul, chronicling their journey to spread the teachings of Jesus and the founding of the Christian church.",
-          "genres": [
-            "historical",
-            "drama"
-          ],
-          "durationInHours": 3.2,
-          "directors": [
-            "Robert Day"
-          ],
-          "cast": [
-            "Anthony Hopkins",
-            "Robert Foxworth",
-            "Eddie Albert",
-            "Raymond Burr"
-          ],
-          "publishedAt": "1981-04-12",
-          "airingTimes": [
-            "2024-11-25T17:00:00Z",
-            "2024-11-26T21:00:00Z"
-          ],
-          "ticketPrice": {
-            "currency": "RSD",
-            "amount": 800
-          },
-          "reviews": [],
-          "poster": "http://localhost:3000/assets/images/posters/peterandpaul.png"
+          "production": "",
+          "airsAt": "1970-01-01T00:00:00Z",
+          "status": "",
+          "amount": 0
         }
-    ],
-    "users": [
-        {
-            "id": 0,
-            "name": "",
-            "surname": "",
-            "phoneNumber": "",
-            "email": "",
-            "address": "",
-            "password": "",
-            "favouriteGenre": "",
-            "basket": [
-                {
-                    "production": "",
-                    "airsAt": "1970-01-01T00:00:00Z",
-                    "status": "",
-                    "amount": 0
-                }
-            ],
-            "image": ""
-        }
-    ],
-    "reviews": [
-        {
-            "id": 0,
-            "user": "http://localhost:3000/user?id=0",
-            "comment": "",
-            "rating": 5,
-            "publishedAt": "1970-01-01T00:00:00Z",
-            "edited": false
-        },
-        {
-            "id": 1,
-            "user": "http://localhost:3000/user?id=0",
-            "comment": "",
-            "rating": 4,
-            "publishedAt": "1970-01-01T00:00:00Z",
-            "edited": false
-        }
-    ]
+      ],
+      "image": ""
+    },
+    {
+      "id": "3467098958",
+      "email": "dsfdfas",
+      "password": "",
+      "name": "",
+      "surname": "",
+      "phoneNumber": "",
+      "favouriteGenres": "",
+      "address": "",
+      "basket": []
+    },
+    {
+      "id": "4050328633",
+      "email": "JohnDoe@examplemail.com",
+      "password": "abcdefg",
+      "name": "John",
+      "surname": "Doe",
+      "phoneNumber": "+3818374873",
+      "favouriteGenres": "drama",
+      "address": "Asadas",
+      "basket": []
+    }
+  ],
+  "reviews": [
+    {
+      "id": 0,
+      "user": "http://localhost:3000/user?id=0",
+      "comment": "",
+      "rating": 5,
+      "publishedAt": "1970-01-01T00:00:00Z",
+      "edited": false
+    },
+    {
+      "id": 1,
+      "user": "http://localhost:3000/user?id=0",
+      "comment": "",
+      "rating": 4,
+      "publishedAt": "1970-01-01T00:00:00Z",
+      "edited": false
+    }
+  ]
 }
